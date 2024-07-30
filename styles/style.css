@@ -20,6 +20,7 @@
     --font-weight-600: 600;
     /* FONT SIZE */
     --font-size-64: 64px;
+    --font-size-16: 16px;
     /* LETTER SPACING */
     --letter-spacing-18: 18px;
     /* LINE HEIGHT */
@@ -27,12 +28,68 @@
     --line-height-64: 64px;
     --line-height-28: 28px;
 }
-.attribution
+.flex
 {
-    font-size: 11px;
-    text-align: center;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
 }
-.attribution a
+body
 {
-    color: #3e52a3;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    padding-left: 160px;
+}
+.header
+{
+    width: 50%;
+    padding-top: 74px;
+    margin-bottom: 130px;
+}
+.left-content
+{
+    width: 50%;
+}
+.left-content .text-container h1 span
+{
+    font-size: var(--font-size-64);
+    line-height: var(--line-height-70);
+    letter-spacing: var(--letter-spacing-18);
+}
+.left-content .text-container h1 span.were
+{
+    color: var(--dark-pink-clr);
+    font-weight: var(--font-weight-300);
+    line-height: var(--line-height-64);
+    letter-spacing: var(--letter-spacing-18);
+}
+.left-content .text-container h1 span.soon
+{
+    color: var(--dark-flr);
+    font-weight: var(--font-weight-600);
+    margin-bottom: 32px;
+}
+.left-content .text-container p
+{
+    color: var(--dark-pink-clr);
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-28);
+    width: 50%;
+    margin-bottom: 40px;
+}
+.right-content
+{
+    width: 50%;
+    overflow: hidden;
+}
+.image-container
+{
+    height: 100vh;
+    float: right;
+}
+.image-container img
+{
+    height: 100%;
 }
