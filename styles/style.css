@@ -7,6 +7,7 @@
     text-decoration: none;
     border: none;
     outline: none;
+    transition: 0.3s;
 }
 :root
 {
@@ -15,6 +16,7 @@
     --dark-flr: #423A3A;
     --dark-pink-clr: #CE9898;
     --medium-pink-clr: #EE8B8B;
+    --error-clr: #F96464;
     --white-clr: #fff;
     /* FONT WEIGHT */
     --font-weight-300: 300;
@@ -23,6 +25,7 @@
     /* FONT SIZE */
     --font-size-64: 64px;
     --font-size-16: 16px;
+    --font-size-13: 13px;
     /* LETTER SPACING */
     --letter-spacing-18: 18px;
     /* LINE HEIGHT */
@@ -108,6 +111,15 @@ body
     border: 1px solid var(--dark-pink-clr);
     border-radius: 50px;
     padding-left: 32px;
+    margin-bottom: 8px;
+}
+.left-content .inp img.error
+{
+    position: absolute;
+    right: 116px;
+    display: none;
+    z-index: 10;
+    top: 15px;
 }
 .left-content .inp input::placeholder
 {
@@ -123,5 +135,22 @@ body
     position: absolute;
     right: 0;
     border-radius: 50px;
-    box-shadow: 0 15px 20px 0 #c66e6e24;
+    box-shadow: 0 15px 20px 0 #c36f6f33;
+}
+.left-content .inp button:hover
+{
+    background: #F8BFBF;
+    box-shadow: 0 15px 20px 0 #c36f6f33;
+}
+button, a
+{
+    cursor: pointer;
+}
+.error
+{
+    margin-left: 32px;
+    color: var(--error-clr);
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-13);
+    display: none;
 }
