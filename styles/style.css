@@ -11,24 +11,19 @@
 }
 
 :root {
-    /* COLOR */
     --light-pink-clr: #F8BFBF;
     --dark-flr: #423A3A;
     --dark-pink-clr: #CE9898;
     --medium-pink-clr: #EE8B8B;
     --error-clr: #F96464;
     --white-clr: #fff;
-    /* FONT WEIGHT */
     --font-weight-300: 300;
     --font-weight-400: 400;
     --font-weight-600: 600;
-    /* FONT SIZE */
     --font-size-64: 64px;
     --font-size-16: 16px;
     --font-size-13: 13px;
-    /* LETTER SPACING */
     --letter-spacing-18: 18px;
-    /* LINE HEIGHT */
     --line-height-70: 70px;
     --line-height-64: 64px;
     --line-height-28: 28px;
